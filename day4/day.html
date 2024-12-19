@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let purchaseAmount = parseFloat(prompt("Enter the total purchase amount:"));
+
+//  discount based on the purchase amount
+let discount;
+
+if (purchaseAmount < 50) {
+    discount = "No discount";
+} else if (purchaseAmount >= 50 && purchaseAmount <= 100) {
+    discount = "5% discount";
+} else if (purchaseAmount >= 101 && purchaseAmount <= 200) {
+    discount = "10% discount";
+} else if (purchaseAmount > 200) {
+    discount = "15% discount";
+} else {
+    discount = "Invalid amount";
+}
+
+//  discount percentage
+alert(discount);

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  1)Add elements to an array and iterate using for loop and for in loop and for of loop
+// Create an array of your favorite movies and iterate an array  to the console.
+let favoriteMovies = ["Inception", "The Dark Knight", "Interstellar", "The Matrix"];
+favoriteMovies.push("The Prestige");
+console.log("Using for loop:");
+for (let i = 0; i < favoriteMovies.length; i++) {
+    console.log(favoriteMovies[i]);
+}
+console.log("\nUsing for...in loop:");
+for (let index in favoriteMovies) {
+    console.log(favoriteMovies[index]);
+}
+console.log("\nUsing for...of loop:");
+for (let movie of favoriteMovies) {
+    console.log(movie);
+}
+
+// 2)Remove elements from an array
+// Remove the first and last elements from the array.
+let movies = ["Inception", "The Dark Knight", "Interstellar", "The Matrix"];
+movies.shift();
+movies.pop();
+console.log(movies);  
+
+// 3)Reverse an array using for loop 
+// hints 
+// use push method 
+let numbers = [1, 2, 3, 4, 5];
+let reversedArray = [];
+for (let i = numbers.length - 1; i >= 0; i--) {
+    reversedArray.push(numbers[i]);
+}
+console.log(reversedArray); 
+
+// 4) find the even and odd numbers in an array [12,3,5,6,22,56,29] 
+// and print the even sum and odd sum
+let arrs = [12, 3, 5, 6, 22, 56, 29];
+let evenSum = 0;
+let oddSum = 0;
+
+for (let num of arr) {
+    if (num % 2 === 0) {
+        evenSum += num;
+    } else {
+        oddSum += num;
+    }
+}
+
+console.log("Even sum:", evenSum);  
+console.log("Odd sum:", oddSum);    
+
+// 5) Take a heterogeneous array and separate each data type into new array
+// hints : use loop, typeof and push method 
+// inp: let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+// out : 
+// num=[3,4,5,6]
+// str=["apple","banana","mango","banana"]
+// bool=[true]
+// obj=[{name: "object"}]
+// [3:53 PM, 11/19/2024] 
+let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+
+let num = [];
+let str = [];
+let bool = [];
+let obj = [];
+
+for (let element of arr) {
+    if (typeof element === 'number') {
+        num.push(element);
+    } else if (typeof element === 'string') {
+        str.push(element);
+    } else if (typeof element === 'boolean') {
+        bool.push(element);
+    } else if (typeof element === 'object') {
+        obj.push(element);
+    }
+}
+
+console.log("num =", num);  
+console.log("str =", str);  
+console.log("bool =", bool);  
+console.log("obj =", obj);  
+
+    </script>
+</body>
+</html>

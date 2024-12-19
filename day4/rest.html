@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let dish = prompt("Enter the name of the dish (e.g., Biriyani, Shawarma, Fried rice, Veg pula):").trim().toLowerCase();
+
+let price;
+
+switch (dish) {
+    case "biriyani":
+        price = "$12.00";
+        break;
+    case "shawarma":
+        price = "$8.00";
+        break;
+    case "fried rice":
+        price = "$10.00";
+        break;
+    case "veg pula":
+        price = "$9.00";
+        break;
+    default:
+        price = "Dish not found";
+}
+
+alert(`The price of ${dish.charAt(0).toUpperCase() + dish.slice(1)} is: ${price}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Task 1: Double the Numbers
+// Objective: Double each number in an array.
+// Instructions: Given an array of numbers, use the map method to create a new array where each number is doubled.
+let numbers = [1, 2, 3, 4, 5];
+let doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers);
+
+// Task 2: Using map
+// Objective: Create a new array with each element squared.
+// Instructions: Given an array of numbers, use the map method to create a new array where each element is the square of the original element.
+
+
+let number = [1, 2, 3, 4, 5];
+let squaredNumbers = numbers.map(num => num * num);
+console.log(squaredNumbers);
+
+// Task 3: Using filter
+// Objective: Filter out even numbers.
+// Instructions: Given an array of numbers, use the filter method to create a new array that contains only the odd numbers.
+
+let num= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let oddNumbers = numbers.filter(num => num % 2 !== 0);
+console.log(oddNumbers);
+
+// Task 4: Filter Long Words
+// Objective: Filter out words longer than 5 characters.
+// Instructions: Given an array of words, use the filter method to create a new array that contains only words with 5 or fewer characters.
+
+let words = ["apple", "banana", "cherry", "date", "kiwi", "orange"];
+let shortWords = words.filter(word => word.length <= 5);
+console.log(shortWords);
+
+
+
+// Task 5 - create carcs using map
+let cars = ["Toyota", "Honda", "BMW", "Ford", "Audi"];
+let carNames = cars.map(car => car + " car");
+console.log(carNames);
+
+
+    </script>
+</body>
+</html>

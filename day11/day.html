@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+ //basic
+// Task 1: take prompt and Convert to Uppercase
+function convertToUppercase(prompt) {
+  return prompt.toUpperCase();
+}
+
+// Task 2: take prompt and Convert to Lowercase
+function convertToLowercase(prompt) {
+  return prompt.toLowerCase();
+}
+
+// Task 3: take prompt and Reverse a String
+// hints: use split and reverse and join method
+
+function reverseString(prompt) {
+  return prompt.split(' ').reverse().join(' ');
+}
+
+
+// advanced
+// Task 1: Username Validation
+// Scenario: Validate a username based on specific criteria. Task:
+// Prompt the user to enter a username.
+// Check if the username contains characters in between 5 to 15 long.
+// Display a message indicating whether the username is valid or not.
+
+function validateUsername() {
+  let username = prompt("Enter a username:");
+  if (username.length >= 5 && username.length <= 15) {
+    alert("Username is valid.");
+  } else {
+    alert("Username is invalid. It must be between 5 and 15 characters long.");
+  }
+}
+
+
+// Task 2: Email Formatter
+// Scenario: Format an email address. Task:
+// Prompt the user to enter their first and last name.
+// Convert the names to lowercase and concatenate them with a dot in between.
+// concat “@gmail.com” to the result and display the formatted email address.
+// inp: jenny and joy
+// out: jenny.joy@gmail.com
+
+function formatEmail() {
+  
+  let firstName = prompt("Enter your first name:");
+  let lastName = prompt("Enter your last name:");
+  let formattedEmail = firstName.toLowerCase() + '.' + lastName.toLowerCase() + '@gmail.com';
+  alert("Formatted Email: " + formattedEmail);
+}
+
+
+
+// Task 3: Word Counter
+// Scenario: Count the number of words in a sentence. Task:
+// Prompt the user to enter a sentence.
+// Split the sentence into words and count them.
+// Display the word count.
+// Hint: use split and length method
+function countWords() {
+  let sentence = prompt("Enter a sentence:");
+  let words = sentence.split(' ');
+  let wordCount = words.length;
+  alert("Word count: " + wordCount);
+}
+
+    </script>
+</body>
+</html>
